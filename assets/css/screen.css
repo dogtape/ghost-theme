@@ -49,7 +49,6 @@ production stylesheet in assets/built/screen.css
 
 /* 1. Variables
 /* ---------------------------------------------------------- */
-
 :root {
     --color-white: #fff;
     --color-lighter-gray: rgb(0 0 0 / 0.05);
@@ -3363,4 +3362,23 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
 
 .gh-button-share:hover {
     border-color: rgba(0, 0, 0, 0.5);
+}
+
+/* homepage */
+
+.homepage-wrapper {
+    background-image: url("../images/starspark2.gif");
+    background-repeat: repeat;
+    height: 400px;
+    width: 100%;
+    color: white;
+}
+
+.homepage-content {
+    width: 100%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
