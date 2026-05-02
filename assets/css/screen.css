@@ -244,6 +244,7 @@ a:hover {
     background-color: transparent;
     outline: none;
     transition: 0.3s ease-in-out;
+    background-color: white;
 }
 
 .gh-form-input::placeholder,
@@ -3367,11 +3368,14 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
 /* homepage */
 
 .homepage-wrapper {
-    background-image: url("../images/starspark2.gif");
+    background-image: url("../images/homepage/starspark.gif");
     background-repeat: repeat;
-    height: 400px;
     width: 100%;
     color: white;
+}
+
+.homepage-content * {
+    font-family: var(--font-serif);
 }
 
 .homepage-content {
@@ -3379,6 +3383,39 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.homepage-cta * {
+    font-family: var(--font-sans);
+}
+
+.homepage-content-list {
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.homepage-image-container {
+    width: 100%;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    column-gap: 2rem;
+}
+
+.homepage-image-container img {
+    max-height: 16rem;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
 }
